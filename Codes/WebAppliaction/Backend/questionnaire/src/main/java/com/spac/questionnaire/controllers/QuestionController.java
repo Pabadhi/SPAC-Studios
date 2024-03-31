@@ -1,7 +1,6 @@
 package com.spac.questionnaire.controllers;
 
-import com.spac.questionnaire.models.Question;
-import com.spac.questionnaire.models.QuestionWrapper;
+import com.spac.questionnaire.dao.Question;
 import com.spac.questionnaire.services.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

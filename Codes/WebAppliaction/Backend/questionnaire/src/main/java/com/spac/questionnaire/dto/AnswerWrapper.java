@@ -1,4 +1,4 @@
-package com.spac.questionnaire.models;
+package com.spac.questionnaire.dto;
 
 import lombok.Data;
 

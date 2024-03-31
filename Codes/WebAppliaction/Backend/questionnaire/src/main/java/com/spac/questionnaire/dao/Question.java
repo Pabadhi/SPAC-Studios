@@ -1,4 +1,4 @@
-package com.spac.questionnaire.models;
+package com.spac.questionnaire.dao;
 
 import com.fasterxml.jackson.annotation.JacksonAnnotation;
 import jakarta.persistence.*;

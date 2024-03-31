@@ -1,8 +1,10 @@
 package com.spac.questionnaire.services;
 
-import com.spac.questionnaire.dao.AnswerDao;
-import com.spac.questionnaire.dao.QuestionDao;
-import com.spac.questionnaire.models.*;
+import com.spac.questionnaire.dao.Answer;
+import com.spac.questionnaire.dao.Question;
+import com.spac.questionnaire.dto.*;
+import com.spac.questionnaire.repositories.AnswerDao;
+import com.spac.questionnaire.repositories.QuestionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

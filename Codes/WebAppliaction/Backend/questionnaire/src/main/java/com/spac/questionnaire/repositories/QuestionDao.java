@@ -1,6 +1,6 @@
-package com.spac.questionnaire.dao;
+package com.spac.questionnaire.repositories;
 
-import com.spac.questionnaire.models.Question;
+import com.spac.questionnaire.dao.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,7 @@
-package com.spac.questionnaire.models;
+package com.spac.questionnaire.dto;
 
 
+import com.spac.questionnaire.dto.AnswerWrapper;
 import lombok.Data;
 
 import java.util.List;
