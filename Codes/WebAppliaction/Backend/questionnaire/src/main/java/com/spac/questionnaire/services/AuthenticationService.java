@@ -34,13 +34,16 @@ public class AuthenticationService {
     JwtService jwtService;
     public ResponseEntity<AuthenticationResponse> register(RegisterDto registerDto) {
 
-        if(userRepository.existsByEmail(registerDto.getEmail())){
-            throw new IllegalArgumentException("Username Is Already Taken!");
-        }
+//        if(userRepository.existsByEmail(registerDto.getEmail())){
+//            throw new IllegalArgumentException("Username Is Already Taken!");
+//        }
+
+        System.out.println("First Name: " + registerDto.getFirstName());
+
 
         User user = User.builder()
-                .firstName(registerDto.getFirstname())
-                .lastName(registerDto.getLastname())
+                .firstName(registerDto.getFirstName())
+                .lastName(registerDto.getLastName())
                 .email(registerDto.getEmail())
                 .password(passwordEncoder.encode(registerDto.getPassword()))
                 .role(Role.USER)
