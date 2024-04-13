@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@CrossOrigin
 @RequestMapping("answers")
+@CrossOrigin
 public class AnswerController {
 
     @Autowired
