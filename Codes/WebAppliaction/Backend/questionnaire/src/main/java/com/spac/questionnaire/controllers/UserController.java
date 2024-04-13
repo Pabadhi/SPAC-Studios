@@ -1,12 +1,12 @@
 package com.spac.questionnaire.controllers;
 
-import com.spac.questionnaire.dto.LoginDto;
 import com.spac.questionnaire.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin
 @RequestMapping("user")
 public class UserController {
 

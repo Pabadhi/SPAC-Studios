@@ -29,13 +29,13 @@ public class UserService {
 
         Optional<User> userOptional = userRepository.findByEmail(userEmail);
 
-        Boolean isQuizDone = null;
+        Boolean hasCompletedQuiz = null;
         if (userOptional.isPresent()) {
             User user = userOptional.get();
-            isQuizDone = user.isQuizDone();
+            hasCompletedQuiz = user.isQuizDone();
         }
 
-        return new ResponseEntity<>(isQuizDone, HttpStatus.OK);
+        return new ResponseEntity<>(hasCompletedQuiz, HttpStatus.OK);
     }
 
     public ResponseEntity<Integer> getScore() {
@@ -47,18 +47,18 @@ public class UserService {
 
         Optional<User> userOptional = userRepository.findByEmail(userEmail);
 
-        Integer score = null;
+        Integer finalScore = null;
         if (userOptional.isPresent()) {
             User user = userOptional.get();
             Optional<QuizScore> scoreOptional =scoreRepository.findById(user.getId());
             if(scoreOptional.isPresent()){
                 QuizScore quizScore = scoreOptional.get();
-                score = quizScore.getScore();
+                finalScore = quizScore.getScore();
             }
 
         }
 
-        return new ResponseEntity<>(score, HttpStatus.OK);
+        return new ResponseEntity<>(finalScore, HttpStatus.OK);
 
     }
 }
