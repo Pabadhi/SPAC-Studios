@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("questions")
-@CrossOrigin
+//@CrossOrigin
 public class QuestionController {
 
     @Autowired

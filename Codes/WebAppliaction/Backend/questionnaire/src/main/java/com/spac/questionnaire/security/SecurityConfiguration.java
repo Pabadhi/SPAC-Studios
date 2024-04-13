@@ -10,6 +10,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
 
 @Configuration
 @EnableWebSecurity
@@ -21,9 +23,14 @@ public class SecurityConfiguration {
     @Autowired
     AuthenticationProvider authenticationProvider;
 
+    @Autowired
+    CorsConfigurationSource corsConfigurationSource;
+
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         http
+                .cors(c-> c.configurationSource(corsConfigurationSource))
                 .csrf().disable()
                 .authorizeHttpRequests()
                 .requestMatchers("api/auth/*")
