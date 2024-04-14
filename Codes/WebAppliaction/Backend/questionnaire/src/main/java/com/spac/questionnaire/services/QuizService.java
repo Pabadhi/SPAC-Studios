@@ -62,16 +62,19 @@ public class QuizService {
         for(Response r: responses){
             Optional<Question> questionOptional = questionRepository.findById(r.getQuestionId());
             Optional<Answer> answerOptional = answerRepository.findById(r.getAnswerId());
+            Optional<Answer> correctAnswerOptional = answerRepository.findCorrectAnswerByQuestionId(r.getQuestionId());
 
-            if (questionOptional.isPresent() && answerOptional.isPresent()){
+
+            if (questionOptional.isPresent() && answerOptional.isPresent() && correctAnswerOptional.isPresent()){
                 Question question = questionOptional.get();
                 Answer answer = answerOptional.get();
+                Answer correctAnswer = correctAnswerOptional.get();
 
                 if(answer.isCorrect()){
                     score++;
                 }
 
-                Feedback feedback = new Feedback(r.getQuestionId(),question.getGeneralFeedback(),answer.getSpecificFeedback());
+                Feedback feedback = new Feedback(r.getQuestionId(),correctAnswer.getId(),question.getGeneralFeedback(),answer.getSpecificFeedback());
 
                 feedbackList.add(feedback);
 
