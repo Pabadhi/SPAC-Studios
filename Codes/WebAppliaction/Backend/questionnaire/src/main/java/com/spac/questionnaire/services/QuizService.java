@@ -74,7 +74,7 @@ public class QuizService {
                     score++;
                 }
 
-                Feedback feedback = new Feedback(r.getQuestionId(),correctAnswer.getId(),question.getGeneralFeedback(),answer.getSpecificFeedback());
+                Feedback feedback = new Feedback(r.getQuestionId(),correctAnswer.getId(),answer.getId(),question.getGeneralFeedback(),answer.getSpecificFeedback());
 
                 feedbackList.add(feedback);
 
