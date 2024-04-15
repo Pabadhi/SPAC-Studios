@@ -7,23 +7,21 @@ import { QuizProvider} from './Helpers/Contexts';
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 function App() {
-  //const [token, setToken] = useState("");
-  //const [questions, setQuestions] = useState([]);
-
-  return (
-    <div className="App">
-      <BrowserRouter>
-        <h1>Questionnaire</h1>
-      <QuizProvider>
-        <Routes>
-          <Route path ="/" element = {<MainMenu/>}></Route>
-          <Route path ="/quiz" element = {<Quiz/>}></Route>
-          <Route path ="/results" element = {<EndScreen/>}></Route>
-        </Routes>
-      </QuizProvider>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <h1 className='gameName'>UNREACHED</h1>
+                <h2 className='topic'>Questionnaire</h2>
+                <QuizProvider>
+                    <Routes>
+                        <Route path ="/" element = {<MainMenu/>}></Route>
+                        <Route path ="/quiz" element = {<Quiz/>}></Route>
+                        <Route path ="/results" element = {<EndScreen/>}></Route>
+                    </Routes>
+                </QuizProvider>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

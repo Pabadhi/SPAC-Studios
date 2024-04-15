@@ -30,20 +30,7 @@ export default function MainMenu() {
             console.error(error)
         })
     }
-
-    // useEffect(() => {
-    //     axios.get(url, {
-    //         headers: {
-    //             Authorization: `Bearer ${jwtToken}`
-    //         }
-    //     }).then(response => {
-    //         console.log(response.data)
-    //         setQuestions(response.data)
-    //     }).catch(error => {
-    //         console.error(error)
-    //     })
-    // }, [])
-
+    
     return (
         <div className="Menu">
             <button onClick={() => {

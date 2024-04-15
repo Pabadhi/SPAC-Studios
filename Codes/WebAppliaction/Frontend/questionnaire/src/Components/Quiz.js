@@ -76,6 +76,9 @@ function Quiz() {
             </div>
 
             <div className="options">
+                {currQuestion === 0 && (
+                    <p></p>
+                )}
                 {currQuestion > 0 && (
                     <button onClick={prevQuestion}>Previous</button>
                 )}
