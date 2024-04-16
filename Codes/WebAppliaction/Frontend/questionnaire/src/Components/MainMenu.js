@@ -17,7 +17,7 @@ export default function MainMenu() {
 
     const url = 'http://localhost:8080/quiz/get'
 
-    const sendRequest = () => {
+    const onStart = () => {
         axios.get(url, {
             headers: {
                 Authorization: `Bearer ${jwtToken}`
@@ -33,9 +33,7 @@ export default function MainMenu() {
     
     return (
         <div className="Menu">
-            <button onClick={() => {
-                sendRequest()
-                }}>
+            <button onClick={() => {onStart()}}>
                 Start Quiz
             </button>
         </div>

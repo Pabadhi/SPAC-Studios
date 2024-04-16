@@ -54,7 +54,7 @@ function Quiz() {
                 navigate("/results");
             } catch (error) {
                 console.error("Error submitting quiz:", error);
-                alert("An error occurred while submitting the quiz. Please try again later.");
+                alert("You already done the quiz.");
             }
         }
     };
