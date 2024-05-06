@@ -5,7 +5,7 @@
 
 ## Database 
 
-We use MySQL as our database. The database script can be found in [`Codes/WebAppliaction/Backend/spacquestionnarie.sql`] (./Backend/spacquestionnarie.sql).
+We use MySQL as our database. The database script can be found in [`/spacquestionnarie.sql`] (./Backend/spacquestionnarie.sql).
 
 ### Instructions
 
