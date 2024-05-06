@@ -3,6 +3,16 @@
 
 # Backend
 
+## Table of Contents
+- [Overview](#Overview)
+- [Features](#Features)
+- [Prerequisites](#Prerequisites)
+- [Spring Boot Application](#Spring-Boot-Application)
+  - [Instructions](#Instructions)
+  - [Application Endpoints](#Application-Endpoints)
+- [Database](#Database)
+  - [Instructions](#Instructions)
+
 ## Overview
 
 This backend application serves as the backend for a questionnaire system. It provides endpoints to manage questionnaires and submit answers securely.
@@ -35,12 +45,12 @@ We use Spring Boot with Spring Security to create our backend application. The b
 
 ### Application Endpoints
 
-- **GET**/quiz/get : Get the questionnaire.
-- **POST**/quiz/submit : Submit the answers and return the calculated score to the frontend application.
-- **GET**/user/isQuizDone :  Used in the Unity environment to check whether the player has completed the quiz.
-- **GET**/user/getScore : Used in the Unity environment to get the player's score.
-- **POST**/api/auth/register : Used in the Unity environment to register players for secure authentication.
-- **POST**/api/auth/login : Log into the quiz in the Unity environment when the player has not completed the quiz after registering.
+- **GET** `/quiz/get` : Get the questionnaire.
+- **POST** `/quiz/submit` : Submit the answers and return the calculated score to the frontend application.
+- **GET** `/user/isQuizDone` :  Used in the Unity environment to check whether the player has completed the quiz.
+- **GET** `/user/getScore` : Used in the Unity environment to get the player's score.
+- **POST** `/api/auth/register` : Used in the Unity environment to register players for secure authentication.
+- **POST** `/api/auth/login` : Log into the quiz in the Unity environment when the player has not completed the quiz after registering.
 
 ## Database 
 
