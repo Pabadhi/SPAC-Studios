@@ -37,7 +37,7 @@ We use Spring Boot with Spring Security to create our backend application. The b
 
 ### Instructions
 
- 1. **Install IntelliJ IDEA**: If you haven't already, install IntelliJ IDEA, a popular IDE for Java development.
+ 1. **Install IntelliJ IDEA**: Install IntelliJ IDEA.
  2. **Open the Project**: Open the cloned project in IntelliJ IDEA.
  3. **Build the Project**: Build the project to resolve dependencies and compile the code.
  4. **Configure the Database**: Update the database configuration in `src/main/resources/application.properties` of the Spring Boot application. 
@@ -76,7 +76,7 @@ We use MySQL as our database. The database script can be found in [`spacquestion
     spring.datasource.password= your_password
     ```
 
-5. **Run Spring Boot Application**: Start the Spring Boot application to create the necessary tables.
+5. **Run Spring Boot Application**: Run the Spring Boot application to create the necessary tables.
 
 6. **Populate Tables**: Once the application runs, execute the rest of the SQL script to insert values into the tables.
 
