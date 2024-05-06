@@ -16,32 +16,17 @@ To access the game files, please follow this link: [Spac Studios DMS](https://dm
 3. Navigate to the designated folder to find and download the game files.
 4. Once downloaded, you can extract the files and start exploring our game!
 
-## Database 
+## Web Application
 
-We use MySQL as our database. The database script can be found in `Codes/WebAppliaction/Backend/spacquestionnarie.sql`.
+We use React to create the frontend, Spring Boot to create the backend, and MySQL as the database.
 
-### Instructions
+- **Frontend**: The frontend code can be found in [`Codes/WebAppliaction/Frontend/questionnaire`](./Codes/WebAppliaction/Frontend/questionnaire).
 
-1. **Install MySQL**: Install MySQL on your system.
+- **Backend**: The backend code can be found in [`Codes/WebAppliaction/Backend/questionnaire`](./Codes/WebAppliaction/Backend/questionnaire). 
 
-2. **Create Database**: Run the first two lines of the script (`spacquestionnarie.sql`) to create the `spacdb` database.
+- **Database Script**: The database script can be found in [`Codes/WebAppliaction/Backend/spacquestionnarie.sql`](./Codes/WebAppliaction/Backend/spacquestionnarie.sql).
+  
+Please refer to the individual README files in each directory for detailed instructions on setting up and running the frontend, backend, and database components of the application.
 
-    ```bash
-    create database spacdb;
-    use spacdb;
-    ```
-
-3. **Database Configuration**: Update the database configuration in `src/main/resources/application.properties` of the Spring Boot application. Change the username and password according to your database configuration.
-
-    ```properties
-    # Database Configuration
-    spring.datasource.url=jdbc:mysql://localhost:3306/spacdb
-    spring.datasource.username= your_username
-    spring.datasource.password= your_password
-    ```
-
-4. **Run Spring Boot Application**: Start the Spring Boot application to create the necessary tables.
-
-5. **Populate Tables**: Once the application is running, execute the rest of the SQL script to insert values into the tables.
 
 
