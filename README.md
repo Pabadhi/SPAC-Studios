@@ -1,17 +1,17 @@
 
 ---
 
-# Spac Studios
+# SPAC Studios
 
 
 https://github.com/Pabadhi/SPAC-Studios/assets/129760133/89186197-f44c-48a1-a6ba-f794279e106a
 
 
-Welcome to Spac Studios! This repository contains the game files for our latest project. Due to their size, we've uploaded them to our Document Management System (DMS).
+Welcome to SPAC Studios! This repository contains the game files for our latest project. Due to their size, we've uploaded them to our Document Management System (DMS).
 
 ## Accessing Game Files
 
-To access the game files, please follow this link: [Spac Studios DMS](https://dms.uom.lk/s/g9rao7BD59XYJ5x)
+To access the game files, please follow this link: [SPAC Studios DMS](https://dms.uom.lk/s/g9rao7BD59XYJ5x)
 
 ### Instructions
 
