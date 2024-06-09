@@ -13,12 +13,11 @@ Welcome to SPAC Studios! This repository contains the game files for our latest 
 
 To access the game files, please follow this link: [SPAC Studios DMS](https://dms.uom.lk/s/g9rao7BD59XYJ5x)
 
-### Instructions
-
-1. Click on the provided link to access the DMS.
-2. Log in with your credentials if required.
-3. Navigate to the designated folder to find and download the game files.
-4. Once downloaded, you can extract the files and start exploring our game!
+## Instructions to run the WebGL Game Build
+1) Execute backend locally
+2) Execute frontend locally
+3) Download and extract the WebGL game file to a known directory
+4) Watch this 1-minute video for a visual guide: [How to Run the WebGL Game](https://www.youtube.com/watch?v=Ceqbmm7ydS8)
 
 ## Web Application
 
