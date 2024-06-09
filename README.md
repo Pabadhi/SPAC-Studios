@@ -12,6 +12,8 @@ Welcome to SPAC Studios! This repository contains the game files for our latest 
 ## Accessing Game Files
 
 To access the game files, please follow this link: [SPAC Studios DMS](https://dms.uom.lk/s/g9rao7BD59XYJ5x)
+For the best gaming experience, we recommend using the Windows build instead of WebGL. 
+The WebGL version may sometimes deprecate certain assets, affecting the game's quality.
 
 ## Instructions to run the WebGL Game Build
 1) Execute backend locally
