@@ -20,7 +20,13 @@ The WebGL version may sometimes deprecate certain assets, affecting the game's q
 1) Execute backend locally
 2) Execute frontend locally
 3) Download and extract the WebGL game file to a known directory
-4) Watch this 1-minute video for a visual guide: [How to Run the WebGL Game](https://www.youtube.com/watch?v=Ceqbmm7ydS8)
+4) Open a powershell terminal where your index.html file is. You need to shift and right click to see Powershell appear as an option. The do the following command:
+
+py -m http.server
+
+This will host a Python server on your machine. This server will run your game when someone joins it. You can then try out your game by opening a web browser and typing "localhost:8000/". 
+
+5) Watch this 1-minute video for a visual guide: [How to Run the WebGL Game](https://www.youtube.com/watch?v=Ceqbmm7ydS8)
 
 ## Web Application
 
