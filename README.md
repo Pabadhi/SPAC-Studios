@@ -13,6 +13,8 @@ Welcome to SPAC Studios! This repository contains the game files for our latest 
 
 To access the game files, please follow this link: [SPAC Studios DMS](https://dms.uom.lk/s/g9rao7BD59XYJ5x)
 
+To access the game assets files, please follow this link: [Assets Files](https://uniofmora-my.sharepoint.com/:f:/g/personal/kavindawmc_20_uom_lk/EvMTJcfgFXtNpNTYisxsRIkBzNbqptoF7d0oxM1vRNd_9w?e=9u8hHl)
+
 For the best gaming experience, we recommend using the Windows build instead of WebGL. 
 The WebGL version may sometimes deprecate certain assets, affecting the game's quality.
 
