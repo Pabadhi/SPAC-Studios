@@ -36,7 +36,7 @@ We use React to create the frontend, Spring Boot to create the backend, and MySQ
 
 - **Frontend**: The frontend code can be found in [`Codes/WebAppliaction/Frontend/questionnaire`](./Codes/WebAppliaction/Frontend/questionnaire).
 
-- **Backend**: The backend code can be found in [`Codes/WebAppliaction/Backend/questionnaire`](./Codes/WebAppliaction/Backend/questionnaire). 
+- **Backend**: The backend code can be found in [`Codes/WebAppliaction/Backend/questionnaire`](.Codes/WebAppliaction/Backend). 
 
 - **Database Script**: The database script can be found in [`Codes/WebAppliaction/Backend/spacquestionnarie.sql`](./Codes/WebAppliaction/Backend/spacquestionnarie.sql).
   
